@@ -1,0 +1,308 @@
+id: /subscriptions/813a0fdc-f866-45f1-a78d-4fab79e064b2/resourceGroups/Maaden-NE-NONPROD-CCD-Notif-PRTL-RG/providers/Microsoft.App/containerapps/ccd-notif-prtl-ca
+identity:
+  principalId: 9d5a6fee-c945-4944-a9e8-1c37d29ac0ef
+  tenantId: bfe67e2e-bec6-4055-9aac-7cf4b793e890
+  type: SystemAssigned
+kind: containerapps
+location: North Europe
+name: ccd-notif-prtl-ca
+properties:
+  configuration:
+    activeRevisionsMode: Single
+    dapr: null
+    identitySettings: []
+    ingress:
+      additionalPortMappings: null
+      allowInsecure: false
+      clientCertificateMode: null
+      corsPolicy: null
+      customDomains: null
+      exposedPort: 0
+      external: true
+      fqdn: ccd-notif-prtl-ca.ashybush-ac194f17.northeurope.azurecontainerapps.io
+      ipSecurityRestrictions: null
+      stickySessions: null
+      targetPort: 80
+      targetPortHttpScheme: null
+      traffic:
+      - latestRevision: true
+        weight: 100
+      transport: Auto
+    maxInactiveRevisions: 100
+    registries:
+    - identity: system
+      passwordSecretRef: ''
+      server: acrccdnotifprtldev.azurecr.io
+      username: ''
+    revisionTransitionThreshold: null
+    runtime: null
+    secrets:
+    - name: database-url
+    - name: jwt-secret-key
+    - name: backend-database-url
+    - name: graph-tenant-id
+    - name: graph-client-id
+    - name: graph-client-secret
+    - name: azure-openai-endpoint
+    - name: azure-openai-api-key
+    - name: azure-openai-deployment
+    service: null
+    targetLabel: ''
+  customDomainVerificationId: 1A4717E9E1B1C9E5E4F72EECF4AA85881AB3BF233C7D04932A9FEE0DEAEAAF19
+  delegatedIdentities: []
+  deploymentErrors: 'The following field(s) are either invalid or missing. Field ''template.containers.ccd-notif-prtl-backend.image''
+    is invalid with details: ''Invalid value: "acrccdnotifprtldev-a4bshpd2eqchhuf3.azurecr.io/maaden-ccd-notif-prtl-backend:latest":
+    failed to resolve registry ''acrccdnotifprtldev-a4bshpd2eqchhuf3.azurecr.io'':
+    lookup acrccdnotifprtldev-a4bshpd2eqchhuf3.azurecr.io on 100.100.246.133:53: server
+    misbehaving'';.'
+  environmentId: /subscriptions/813a0fdc-f866-45f1-a78d-4fab79e064b2/resourceGroups/Maaden-NE-NONPROD-CCD-Notif-PRTL-RG/providers/Microsoft.App/managedEnvironments/ccd-notif-portal-container-apps-environment
+  eventStreamEndpoint: https://northeurope.azurecontainerapps.dev/subscriptions/813a0fdc-f866-45f1-a78d-4fab79e064b2/resourceGroups/Maaden-NE-NONPROD-CCD-Notif-PRTL-RG/containerApps/ccd-notif-prtl-ca/eventstream
+  latestReadyRevisionName: ccd-notif-prtl-ca--0000002
+  latestRevisionFqdn: ccd-notif-prtl-ca--0000002.ashybush-ac194f17.northeurope.azurecontainerapps.io
+  latestRevisionName: ccd-notif-prtl-ca--0000002
+  managedEnvironmentId: /subscriptions/813a0fdc-f866-45f1-a78d-4fab79e064b2/resourceGroups/Maaden-NE-NONPROD-CCD-Notif-PRTL-RG/providers/Microsoft.App/managedEnvironments/ccd-notif-portal-container-apps-environment
+  outboundIpAddresses:
+  - 20.105.70.20
+  - 20.105.70.58
+  - 20.105.69.247
+  - 20.105.70.28
+  - 20.105.47.15
+  - 20.105.47.12
+  - 4.208.220.175
+  - 4.208.218.235
+  - 4.208.219.44
+  - 4.208.219.6
+  - 20.105.32.76
+  - 20.105.32.139
+  - 20.105.33.209
+  - 20.105.33.28
+  - 20.105.32.212
+  - 20.105.32.182
+  - 20.105.33.168
+  - 20.105.33.212
+  - 20.105.33.155
+  - 20.105.33.195
+  - 4.208.20.29
+  - 132.164.219.65
+  - 128.251.88.173
+  - 4.207.105.28
+  - 4.208.96.159
+  - 20.223.25.183
+  - 4.207.216.65
+  - 20.13.249.149
+  - 4.207.64.63
+  - 172.205.33.239
+  - 20.223.122.169
+  - 52.155.173.170
+  - 20.223.250.21
+  - 20.123.103.147
+  - 135.236.217.236
+  - 20.105.55.247
+  - 20.54.2.141
+  - 20.223.38.196
+  - 20.166.132.191
+  - 4.245.147.211
+  - 4.209.224.55
+  - 172.205.44.7
+  - 20.54.3.244
+  - 20.54.98.7
+  - 4.207.211.109
+  - 20.223.21.222
+  - 4.208.97.27
+  - 132.164.148.204
+  - 132.164.148.121
+  - 128.251.88.75
+  - 20.82.159.125
+  - 4.207.64.51
+  - 20.166.233.193
+  - 20.107.137.66
+  - 4.207.32.247
+  - 20.238.6.182
+  - 132.164.148.57
+  - 52.156.203.41
+  - 4.231.131.52
+  - 4.210.16.13
+  - 52.236.10.233
+  - 4.207.209.95
+  - 172.205.44.20
+  - 20.166.138.202
+  - 128.251.110.10
+  - 52.236.13.121
+  - 20.166.138.114
+  - 128.251.108.109
+  - 4.207.156.22
+  - 135.236.217.232
+  - 172.205.33.183
+  - 4.207.104.97
+  - 52.142.85.185
+  - 20.13.229.235
+  - 20.223.98.139
+  - 128.251.104.153
+  - 52.142.85.215
+  - 20.166.137.254
+  - 4.207.216.58
+  - 52.236.8.157
+  - 20.105.124.149
+  - 20.105.123.192
+  - 20.105.123.181
+  - 20.105.124.100
+  - 20.123.115.147
+  - 20.123.115.110
+  - 4.210.23.209
+  - 4.210.23.217
+  - 4.210.23.181
+  - 4.210.23.186
+  - 52.178.141.116
+  - 52.178.138.108
+  - 52.178.138.196
+  - 52.178.141.59
+  - 52.178.141.173
+  - 52.178.141.228
+  - 52.178.139.43
+  - 52.169.76.168
+  - 52.178.141.140
+  - 52.178.138.54
+  - 20.13.204.202
+  - 4.207.217.91
+  - 52.155.234.156
+  - 172.205.35.249
+  - 172.205.35.229
+  - 48.209.157.68
+  - 4.209.25.170
+  - 40.67.253.40
+  - 20.223.120.156
+  - 20.223.123.166
+  - 132.164.189.149
+  - 20.166.148.123
+  - 20.105.33.160
+  - 4.207.105.136
+  - 48.209.172.155
+  - 20.105.17.204
+  - 128.251.111.10
+  - 134.149.0.27
+  - 52.155.232.34
+  - 172.205.110.108
+  - 132.164.189.61
+  - 172.205.110.119
+  - 20.54.120.47
+  - 20.13.205.127
+  - 20.54.120.50
+  - 20.107.164.137
+  - 4.231.133.137
+  - 4.210.22.253
+  - 52.155.234.111
+  - 4.210.8.84
+  - 4.208.46.8
+  - 20.54.102.243
+  - 20.166.148.86
+  - 20.93.57.181
+  - 20.54.24.37
+  - 20.13.210.210
+  - 4.209.73.224
+  - 40.127.254.87
+  - 40.127.254.100
+  - 20.166.96.165
+  - 20.107.142.246
+  - 52.142.112.78
+  - 135.236.200.227
+  - 132.164.159.156
+  - 52.142.87.254
+  - 4.208.97.209
+  - 4.207.70.255
+  - 48.209.157.6
+  - 4.210.20.122
+  - 4.210.23.21
+  - 4.207.169.135
+  - 132.164.159.145
+  - 4.208.46.25
+  - 20.13.210.209
+  - 132.164.189.57
+  - 52.142.112.141
+  - 20.223.116.200
+  - 4.207.216.228
+  - 4.210.8.92
+  - 20.166.96.168
+  - 20.54.124.160
+  patchingMode: Automatic
+  provisioningState: Failed
+  runningStatus: Running
+  template:
+    containers:
+    - env:
+      - name: DATABASE_URL
+        secretRef: database-url
+      - name: JWT_SECRET_KEY
+        secretRef: jwt-secret-key
+      - name: APP_ENV
+        value: production
+      - name: BACKEND_DATABASE_URL
+        secretRef: backend-database-url
+      - name: BACKEND_SESSION_SECRET
+        secretRef: jwt-secret-key
+      - name: GRAPH_TENANT_ID
+        secretRef: graph-tenant-id
+      - name: GRAPH_CLIENT_ID
+        secretRef: graph-client-id
+      - name: GRAPH_CLIENT_SECRET
+        secretRef: graph-client-secret
+      - name: AZURE_OPENAI_ENDPOINT
+        secretRef: azure-openai-endpoint
+      - name: AZURE_OPENAI_API_KEY
+        secretRef: azure-openai-api-key
+      - name: AZURE_OPENAI_DEPLOYMENT
+        secretRef: azure-openai-deployment
+      image: mcr.microsoft.com/k8se/quickstart:latest
+      imageType: ContainerImage
+      name: simple-hello-world-container
+      probes:
+      - failureThreshold: 3
+        periodSeconds: 10
+        successThreshold: 1
+        tcpSocket:
+          port: 80
+        timeoutSeconds: 5
+        type: Liveness
+      - failureThreshold: 48
+        periodSeconds: 5
+        successThreshold: 1
+        tcpSocket:
+          port: 80
+        timeoutSeconds: 5
+        type: Readiness
+      - failureThreshold: 240
+        initialDelaySeconds: 1
+        periodSeconds: 1
+        successThreshold: 1
+        tcpSocket:
+          port: 80
+        timeoutSeconds: 3
+        type: Startup
+      resources:
+        cpu: 0.25
+        ephemeralStorage: 1Gi
+        memory: 0.5Gi
+    customMetricsSettings: null
+    initContainers: null
+    revisionSuffix: ''
+    scale:
+      cooldownPeriod: 300
+      maxReplicas: 10
+      minReplicas: 1
+      pollingInterval: 30
+      rules: null
+    serviceBinds: null
+    terminationGracePeriodSeconds: null
+    volumes: []
+  workloadProfileName: Consumption
+resourceGroup: Maaden-NE-NONPROD-CCD-Notif-PRTL-RG
+systemData:
+  createdAt: '2026-04-27T15:43:37.570655'
+  createdBy: HaquiM@maaden.onmicrosoft.com
+  createdByType: User
+  lastModifiedAt: '2026-05-04T15:44:34.9350143'
+  lastModifiedBy: NumanF@maaden.com.sa
+  lastModifiedByType: User
+tags:
+  Project Name: CCD Notification Portal
+  Team Name: IT Strategies & Architecture
+type: Microsoft.App/containerApps
